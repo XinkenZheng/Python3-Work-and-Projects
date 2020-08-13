@@ -6,7 +6,11 @@
 
 from IPython.display import clear_output
 
+
+#Initialize the board with numbers 1-9.
 board = ['#','1','2','3','4','5','6','7','8','9']
+
+#function to display the game board.
 def display_board(board):
     clear_output()
     print( '   |''   |')
@@ -21,7 +25,7 @@ def display_board(board):
     print( ' '+ board[1] +' | '+  board[2] + ' |' +' ' +board[3])
     print( '   |''   |')
     
-
+#test if function display_board is working correctly.
 test_board = ['X','O','O','X','O','X','O','X','O','X']
 display_board(test_board)
 
